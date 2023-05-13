@@ -8,7 +8,12 @@ using System.IO;
 
 class Program
 {
-    
+    //I added a try and catch that tells the user if the file is misssing or if the file is 
+    //unable to load
+    //i added the user to only choose between option provided if the 
+    //user type any number from that which is provided
+    //it will prompt them to only select 1 - 5.
+    //i also addded if the user wish to quit it should display goodbye
     static void Main(string[] args)
     {
        
