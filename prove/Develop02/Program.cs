@@ -32,26 +32,26 @@ class Program
 
         switch (choice) {
             case "1":
-                Console.WriteLine(promptGenerator.getAnotherPrompt());
+                Console.WriteLine(PromptGenerator.GetAnotherPrompt());
                 string entryText = Console.ReadLine();
-                journal.writeEntry(entryText);
+                journal.WriteEntry(entryText);
                 break;
             case "2":
-                journal.displayEntries();
+                journal.DisplayEntries();
                 break;
             case "3":
                 Console.Write("Enter filename to load: ");
                 string loadFile = Console.ReadLine();
-                journal.loadEntries(loadFile);
+                journal.LoadEntries(loadFile);
                 break;
             case "4":
                Console.Write("Enter filename to save: ");
                 string saveFile = Console.ReadLine();
-                journal.saveEntries(saveFile);
+                journal.SaveEntries(saveFile);
                 break; 
             case "5":
                 Console.WriteLine("Goodbye");
-                break;
+                return;
             default:
                 Console.WriteLine("Invalid choice! Enter option 1-5");
                 break;

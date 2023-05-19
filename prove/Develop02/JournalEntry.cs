@@ -5,22 +5,22 @@ using System.IO;
 
 //journalentry class
 public class JournalEntry {
-    public string Text {get; set; }
-    public DateTime TimeStamp {get; set; }
+    public string _Text {get; set; }
+    public DateTime _TimeStamp {get; set; }
 
     public JournalEntry(string text) {
-        Text = text;
-        TimeStamp = DateTime.Now;
+        _Text = text;
+        _TimeStamp = DateTime.Now;
     }
 
 
     public JournalEntry(string text, DateTime timeStamp) {
-        Text = text;
-        TimeStamp = timeStamp;
+        _Text = text;
+        _TimeStamp = timeStamp;
     }
 
     public override string ToString() {
-        return TimeStamp.ToString() + " - " + Text;
+        return _TimeStamp.ToString() + " - " + _Text;
     }
 }
  
