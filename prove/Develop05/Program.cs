@@ -304,3 +304,11 @@ class Program
         }
     }
 }
+
+
+// i added a new goal which is achievement 
+/// i also made the user not to repeat type of goal unless it is achieved
+// but i have issues running the active code
+// i made a previous corrects and it is still running that instead of this current corrections
+// i tried several times but it is still the same
+// i cant run this current code
